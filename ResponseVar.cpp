@@ -270,7 +270,7 @@ void ResponseVar::WriteSim(FILE * pFile, int type)
    {
       case(WRITE_SCI) : 
       {
-         fprintf(pFile, "%E  ", m_CurrentVal);
+         fprintf(pFile, "%.30E  ", m_CurrentVal);
          break;
       }/* end case(WRITE_SCI) */
       case(WRITE_DEC) :
